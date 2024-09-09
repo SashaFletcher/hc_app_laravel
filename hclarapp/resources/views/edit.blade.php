@@ -4,12 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Laravel 5.6 CRUD Tutorial With Example </title>
+    <title>edit</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
   </head>
   <body>
     <div class="container">
-      <h2>Edit A Form</h2><br  />
+      <h2>Edit Patient Details</h2><br  />
         <form method="post" action="{{action('UserDetailsController@update', $id)}}">
         <!--@csrf-->
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -128,7 +128,7 @@
         <div class="row">
           <div class="col-md-4"></div>
           <div class="form-group col-md-4" style="margin-top:60px">
-            <button type="submit" class="btn btn-success" style="margin-left:38px">Update</button>
+            <button type="submit" class="btn btn-primary" style="margin-left:38px">Update</button>
           </div>
         </div>
       </form>
